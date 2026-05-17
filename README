@@ -1,0 +1,30 @@
+# 🚀 Relativistic Travel Simulator
+
+> *"You are a space traveler. Choose your destination, set your speed. The universe calculates the rest."*
+
+## Overview
+
+A Python simulation of space travel based on Einstein's Special Theory of Relativity (1905).
+The program receives a space destination and a velocity as a fraction of the speed of light, then calculates the relativistic effects of the journey: time dilation, space contraction, and relativistic kinetic energy.
+
+---
+## Roadmap
+
+### v1.1 — Full CRUD
+- [ ] Save calculated trips to a JSON file
+- [ ] List trip history
+- [ ] Delete trips from history
+- [ ] Search trips by destination or date
+
+### v1.2 — New Physical Calculations
+- [ ] Relativistic Doppler Effect (frequency shift of light)
+- [ ] Relativistic mass (m = γ × m₀)
+- [ ] Relativistic velocity addition
+- [ ] Time required to accelerate to chosen velocity
+
+### v1.3 — Interface & Visualization
+- [ ] Web interface with Flask
+- [ ] Time dilation charts with matplotlib
+- [ ] Visual comparison Earth vs Traveler
+
+by: Gabriel Anthony
