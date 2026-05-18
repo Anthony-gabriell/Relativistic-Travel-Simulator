@@ -36,11 +36,6 @@ if validate_velocity(velocity):
     result_energy = relativistic_energy(velocity, massKg)
     print(result_energy)
 
-
-
-
-
-
 else:
     print("Invalid velocity. Must be between 0 and 1.")
 

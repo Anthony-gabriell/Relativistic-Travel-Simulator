@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relativistic Travel Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>RELATIVISTIC TRAVEL SIMULATOR</h1>
+        <p>You are a space traveler<br> Choose your destination, set your speed<br> The universe calculates the rest</p>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <label for="destination">Select your destination</label>
+            <select id="destination">
+                <option value="1">Proxima Centauri: 4.24 light-years</option>
+                <option value="2">Alpha Centauri: 4.37 light-years</option>
+                <option value="3">Sirius: 8.60 light-years</option>
+                <option value="4">Vega: 25.00 light-years</option>
+                <option value="5">Andromeda: 2,537,000 light-years</option>
+            </select>
+
+            <label for="velocity">Velocity (fraction of light speed)</label>
+            <input type="number" id="velocity" placeholder="ex: 0.99" min="0.01" max="0.9999" step="0.01">
+
+            <button onclick="calculate()">Calculate</button>
+        </section>
+
+        <section class="results-section" id="results" style="display:none;">
+            <h2>Results</h2>
+            <div class="result-card">
+                <span>Lorentz Factor (γ)</span>
+                <strong id="lorentz"></strong>
+            </div>
+            <div class="result-card">
+                <span>Time on Earth</span>
+                <strong id="time_earth"></strong>
+            </div>
+            <div class="result-card">
+                <span>Time for Traveler</span>
+                <strong id="time_traveler"></strong>
+            </div>
+            <div class="result-card">
+                <span>Contracted Distance</span>
+                <strong id="contracted"></strong>
+            </div>
+            <div class="result-card">
+                <span>Relativistic Energy (1kg)</span>
+                <strong id="energy"></strong>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('static/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #0a0010;
+    font-family: 'Courier New', monospace;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    color: #ff6a00;
+    text-shadow: 0 0 20px rgba(255, 106, 0, 0.6);
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #ffffff;
+    font-style: italic;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.9), 0 0 8px rgba(255, 255, 255, 0.6), 0 0 4px rgba(0, 0, 0, 1);
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: rgba(10, 0, 20, 0.75);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #7c2d92;
+    backdrop-filter: blur(6px);
+}
+
+label {
+    color: #ff6a00;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+select, input {
+    background: rgba(10, 0, 20, 0.85);
+    border: 1px solid #7c2d92;
+    color: #f0d0ff;
+    padding: 12px;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+}
+
+button {
+    background: rgba(124, 45, 146, 0.3);
+    color: #ff6a00;
+    border: 1px solid #ff6a00;
+    padding: 14px;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background: #ff6a00;
+    color: #0a0010;
+}
+
+.results-section {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.results-section h2 {
+    color: #ff6a00;
+    margin-bottom: 8px;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 106, 0, 0.5);
+}
+
+.result-card {
+    background: rgba(10, 0, 20, 0.75);
+    border: 1px solid #7c2d92;
+    border-radius: 8px;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(6px);
+}
+
+.result-card span {
+    color: #c084fc;
+    font-size: 0.9rem;
+}
+
+.result-card strong {
+    color: #ff6a00;
+    font-size: 1.1rem;
+    text-shadow: 0 0 8px rgba(255, 106, 0, 0.4);
+}
