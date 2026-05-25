@@ -1,11 +1,11 @@
 from physics import *
 from destinations import get_destinations, get_distance, list_destinations
 
-print("================================================")
+
 print("         RELATIVISTIC TRAVEL SIMULATOR          ")
-print("================================================")
+print("------------------------------------------------")
 print("# -- Welcome to your Space Travel Simulator -- #")
-print("================================================")
+print("------------------------------------------------")
 print("")
 print("Available destinations")
 print("")
